@@ -1,6 +1,4 @@
-﻿using board;
-
-namespace board {
+﻿namespace board {
     class Piece {
 
         public Position position { get; set; }
@@ -12,10 +10,10 @@ namespace board {
 
         }
 
-        public Piece(Position position , Color color , Board board) {
-            this.position = position;
+        public Piece(Board board, Color color) {
             this.color = color;
             this.board = board;
+            position = null;
             qtyMovements = 0;
         }
     }
